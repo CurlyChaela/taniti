@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: rgb(242, 234, 224); 
+}
+.logo-link img {
+    display: block;
+}
+
+.navigation-item {
+    margin: 0 20px; 
+    text-decoration: none;
+    color: #21150f; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.navigation-item:hover {
+    color: #6a4612; /* Change color on hover */
+}
+
+.navigation-item.w--current {
+    color: #c59e71; /* Highlight current page link */
+}
+
+.navigation-items input[type="text"] {
+    margin-left: 20px; /* Moves search bar to the right */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; 
+}
+
+.navigation-items input[type="text"]:focus {
+    border-color: #6a4612; /* Change border color on focus */
+}
+
+.navigation-item {
+    margin: 0 40px; /* Adjusts nav bar spacing */
+}
+
+.background-image-section {
+    position: relative;
+    background-image: url('images/beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px; 
+}
+
+.title {
+    color: rgb(55, 28, 8); 
+    font-size: 208px; 
+    font-weight: bold; 
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #e9d2a7; /* Optional: Set a background color for the main content */
+}
+
+.main-title {
+    text-align: center;
+    font-size: 76px; /* Adjust the font size as needed */
+    color: #6a4612; /* Adjust the text color */
+    margin: 0;
+}
+
+
+.new-text-section {
+    padding: 20px;
+    background-color: #e7d5c1;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.new-text-section h2 {
+    font-family: cursive;
+    font-size: 4.5em;
+    color: #2d2212;
+    margin-bottom: 10px;
+}
+
+.new-text-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f3e5db;
+}
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    margin: 25px; /* Adjust spacing between images */
+}
+
+.image-link-container {
+    text-align: center; /* Centers the image and text within the container */
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.image-link {
+    display: inline-block; /* Ensures the anchor is treated as a block element */
+    text-decoration: none; /* Removes underline from the link */
+    color: black; /* Default text color */
+    margin: 10px; /* Adds space around each link */
+}
+
+.image-link img {
+    display: block; /* Ensures the image is a block element */
+    max-width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    transition: filter 0.3s; /* Smooth transition for filter changes */
+}
+
+.image-link:hover img {
+    filter: sepia(50%); /* Darkens the image on hover */
+}
+
+.image-text {
+    display: block; /* Ensures the text is a block element */
+    margin-top: 10px; /* Adds space between the image and the text */
+    font-size: 16px; /* Adjust font size as needed */
+    color: rgb(60, 38, 14); /* Text color */
+}
+
+.image-link:hover .image-text {
+    color: #8d6340; /* Text color on hover */
+}
+
+
+.background-section {
+    background-image: url('images/island.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 900px; /* Adjust the height as needed */
+}
+
+.another-section {
+    background-image: url('images/leaf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section {
+    background-image: url('images/swing.jpeg'); /* Replace with your new background image */
+    background-size: cover;
+    background-position: center;
+    height: 800px; /* Adjust the height as needed */
+}
+.second-title {
+    text-align: center;
+    font-size: 76px; /* Adjust the font size as needed */
+    color: #e8d4c1; /* Adjust the text color */
+    margin: 0;
+}
+
+.horizontal-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f3e5db;
+}
+
+.column {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.image-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: rgb(49, 35, 14);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-link img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #3b270f;
+}
+
+.resort-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resort-title {
+    font-size: 36px;
+    color: #35250e;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.resort-image {
+    width: 100%;
+    display: none;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgb(129, 97, 79);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.resort-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .resort-title {
+        font-size: 28px;
+    }
+
+
+}
+.more-info-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #5b461d;
+    text-decoration: none;
+    border: 1px solid #382610;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-info-link:hover {
+    background-color: #d6b27f;
+    color: white;
+}
+
+
+/* Specific styles for carousel with data-carousel-id="2" */
+.carousel[data-carousel-id="2"] .resort-image {
+    background-color: #c59e71;
+}
+
+.carousel[data-carousel-id="2"] .carousel-controls button {
+    background-color: rgb(126, 104, 70);
+}
+
+.carousel[data-carousel-id="2"] .carousel-controls button:hover {
+    background-color: rgba(126, 104, 70, 0.8);
+}
+
+/* Specific styles for carousel with data-carousel-id="3" */
+.carousel[data-carousel-id="3"] .resort-image {
+    background-color: #c59e71;
+}
+
+.carousel[data-carousel-id="3"] .carousel-controls button {
+    background-color: rgb(126, 104, 70);
+}
+
+.carousel[data-carousel-id="3"] .carousel-controls button:hover {
+    background-color: rgba(126, 104, 70, 0.8);
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #a99370f0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #50361c;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+button {
+    padding: 15px;
+    background-color: #c0a794;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.faq {
+    background: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq p {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #331f0d;
+    color: #ddc69a;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}

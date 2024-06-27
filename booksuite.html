@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <title>Taniti</title>
+</head>
+<body>
+    <div class="container">
+        <a href="/" aria-current="page" class="logo-link"><img src="images/logo.jpg" width="108" alt="Logo" class="logo-image"></a>
+        <nav role="navigation" class="navigation-items">
+            <a href="/index.html" class="navigation-item">HOME</a>
+            <a href="/accommodations.html" class="navigation-item w--current">ACCOMMODATIONS</a>
+            <a href="entertainment.html" class="navigation-item">ENTERTAINMENT</a>
+            <a href="/dining.html" class="navigation-item">DINING</a>
+            <a href="/transportation.html" class="navigation-item">TRANSPORTATION</a>
+            <input type="text" placeholder="Search..">
+        </nav>
+        
+    </div>
+    <div class="resort-section">
+        <h1 class="resort-title">Island Escape 1BD Suite</h1>
+        <div class="carousel" data-carousel-id="1">
+            <img src="images/superior.jpeg" alt="Serene Sands Resort" class="resort-image">
+            <img src="images/superior2.jpeg" alt="Serene Sands Resort" class="resort-image" style="display:none;">
+            <img src="images/superior3.jpeg" alt="Serene Sands Resort" class="resort-image" style="display:none;">
+            <img src="images/superior4.jpeg" alt="Serene Sands Resort" class="resort-image" style="display:none;">
+            <div class="carousel-controls">
+                <button class="prev" data-carousel-id="1">&#10094;</button>
+                <button class="next" data-carousel-id="1">&#10095;</button>
+            </div>
+        </div>
+        <p class="resort-description">
+            Unwind in our cozy Island Escape Suite, featuring modern amenities and a serene atmosphere. This comfortable room offers a plush king-size bed, a private balcony with garden views, and a well-appointed bathroom with a walk-in shower. Perfect for a relaxing stay, the Island Escape Suite ensures a tranquil retreat in paradise.<br> 
+          From:
+          $173 USD / Night
+         <br>Including $50 USD Resort Experience Fee, Excluding Taxes
+         </p>
+    <div class="container">
+        <h1>Book Your Stay</h1>
+        <form action="submit_booking.php" method="post">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+            <label for="room">Room Type:</label>
+            <input type="text" id="room" name="room" placeholder="Enter Room Type" required>
+
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="special_requests">Special Requests:</label>
+            <textarea id="special_requests" name="special_requests" rows="4" cols="50"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <p>&copy; 2024 Taniti. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <ul class="footer-links">
+                <li><a href="/bookingpolicy.html">Booking Policy</a></li>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/faq.html">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
